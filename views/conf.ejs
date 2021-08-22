@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id='results'>
+    <div id='player-div'>
+        <h3><span id='player-name'><%=game.player.name%></span>: <span id='player-choice'><%= game.player.choice%></span></h3>
+        <p>Tally:<span id='player-tally'><%=game.player.tally%></span></p>
+    </div>
+    <div id='computer-div'>
+        <h3>Comp: <span id='computer-choice'><%= game.computer.choice%></span></h3>
+        <p>Tally: <span id='comp-tally'><%=game.computer.tally%></span></p>
+    </div>
+</div>
+
+<h1 id='message'><%= game.message%></h1>
+<form action='/playAgain' method='post'>
+<input type='submit' id='play-again' value='Play Again'>
+</form>
+<a href='/easyHard' id='settings'>Settings</a>
+</body>
+</html>

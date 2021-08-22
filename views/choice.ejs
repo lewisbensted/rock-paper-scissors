@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action='/confirmation' method='post'>
+<input type='submit' id='rock' name ='choice' value='Rock'>
+<input type='submit' id='paper' name= 'choice' value='Paper'>
+<input type='submit' id='scissors' name='choice' value='Scissors'>
+<% if (easyHard==='Hard'){%>
+<input type='submit' id='lizard' name= 'choice' value='Lizard'>
+<input type='submit' id='spock' name='choice' value='Spock'>
+<%}%>
+</form>
+<a href='/easyHard' id='settings'>Settings</a>
+</body>
+</html>
